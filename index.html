@@ -2,96 +2,74 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>EVOCHTAAL · Dream Station</title>
+<title>EVOCHTAAL · impulse-index · EXE</title>
 
 <style>
-    body {
-        font-family: monospace;
-        background: #111;
-        color: #eee;
-        padding: 40px;
-        text-align: center;
-    }
-    suite {
-        display: block;
-        font-size: 34px;
-        margin-bottom: 20px;
-        font-weight: bold;
-        color: #9cf;
-    }
-    slide {
-        display: block;
-        font-size: 18px;
-        margin-bottom: 20px;
-        opacity: 0.7;
-        color: #ccc;
-    }
-    .puzzle {
-        font-size: 26px;
-        padding: 20px;
-        border: 2px dashed #9cf;
-        display: inline-block;
-        margin-top: 20px;
-    }
-    .axis {
-        margin-top: 40px;
-        font-size: 20px;
-        line-height: 1.8;
-        color: #cfc;
-    }
+  body {
+    background:#0b0b0b;
+    color:#e6f6ff;
+    font-family:monospace;
+    padding:40px;
+    text-align:center;
+  }
+  suite {
+    display:block;
+    font-size:34px;
+    color:#7dd3fc;
+    margin-bottom:20px;
+  }
+  slide {
+    display:block;
+    font-size:18px;
+    opacity:0.7;
+    margin-bottom:20px;
+  }
+  .puzzle {
+    font-size:26px;
+    padding:20px;
+    border:2px dashed #7dd3fc;
+    display:inline-block;
+    margin-top:20px;
+  }
+  #iki-romance {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    border-top:2px solid #7dd3fc;
+    padding:20px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    z-index:99999;
+  }
+  .iki-rom-btn {
+    background:#0b1220;
+    color:#7dd3fc;
+    border:1px solid #1f2937;
+    padding:10px 16px;
+    font-size:15px;
+    cursor:pointer;
+    border-radius:6px;
+    transition:all .2s;
+  }
+  .iki-rom-btn:hover {
+    background:#12263a;
+    color:#a8e8ff;
+    transform:scale(1.05);
+  }
 </style>
 </head>
 
 <body>
 
-<suite>EVOCHTAAL</suite>
+<suite>EVOCHTAAL · impulse</suite>
 <slide>dimension.flow()</slide>
 
-<div class="puzzle" data-piece="EVOCHTAAL">
-    ((( EVO · CHTAAL · Dream Station )))
+<div class="puzzle">
+  ((( EVO · CHTAAL · impulse-index · EXE )))
 </div>
 
-<div class="axis">
-    up – Streben<br>
-    down – Ruhe<br>
-    left – Haltung<br>
-    right – Ausgleich<br>
-    main – Vorwärts<br>
-    back – Suite · Rückgabe<br>
-    in – Aufnahme<br>
-    out – Abgabe
-</div>
-
-<script>
-// EVOCHTAAL – Dream Station Startsignal
-console.log("EVOCHTAAL geladen: Traum-Ebene aktiv");
-
-// 8-Bewegung · AXIOMIAT
-const AXIOMIAT = {
-    up: "Streben",
-    down: "Ruhe",
-    left: "Haltung",
-    right: "Ausgleich",
-    main: "Vorwärts",
-    back: "Suite · Rückgabe",
-    in: "Aufnahme",
-    out: "Abgabe",
-    stamp: Date.now()
-};
-
-console.log("AXIOMIAT:", AXIOMIAT);
-
-// Echo · CHTAAL
-function CHTAAL(ideal) {
-    return {
-        echo: ideal,
-        mode: "CHTAAL · Rückgabe",
-        stamp: Date.now()
-    };
-}
-
-console.log("CHTAAL:", CHTAAL("EVO · Ideal"));
-</script>
-
-</body>
-</html>
+<div id="iki-romance">
